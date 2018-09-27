@@ -13,6 +13,12 @@ h3 {
   line-height: normal;
 }
 
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  line-height: normal;
+}
+
 p {
   font-family: 'Roboto', sans-serif;
   line-height: normal;
@@ -79,7 +85,9 @@ li {
 /* Top menu "header"*/
 
 header {
-  background-color: whitesmoke;
+  background-color: #0A3C6D;
+/*  transition: background-color 200ms linear; */
+  transition: all 200ms linear;
   height: 4rem;
 
   position: fixed; /* Set the navbar to fixed position */
@@ -88,30 +96,29 @@ header {
 }
 
 header img {
-  margin-left: 2rem;
-  margin-right: 2rem;
   height: 2.5rem;
 }
 
 nav {
-  margin-right: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-grow: 1;
 }
 
-#main-menu li a {
-  color: #0A3C6D;
+#main-menu{
+  color: #fff;
   font-family: Roboto;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
   padding-bottom: 1rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
   padding-top: 1rem;
 }
 
+#main-menu li {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 
 
 /* Hero banner */
@@ -154,13 +161,20 @@ nav {
 }
 
 .button a {
-  border: 1px solid white;
+/*  border: 1px solid white;  */
+  background-color: white;
+  color: #0A3C6D;
+
   padding: 1rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   border-radius: 0.5rem;
 }
 
+.button span {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 
 /* Media mentions  */
@@ -171,7 +185,6 @@ nav {
   box-shadow: 0px 2px 5px #ddd;
   width: 100%;
 
-  padding-bottom: 1rem;
   padding-top: 1rem;
 
   display:flex;
@@ -193,12 +206,22 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
+#nytimes {
+  width: 24%;
+}
 
 
 .logo-box img {
   width: 12%;
 }
 
+#nytimes {
+  width: 24%;
+}
+
+#cbs {
+  width: 18%;
+}
 
 
 
@@ -226,6 +249,7 @@ nav {
 
 .box-text h3 {
   color: #0A3C6D;
+  font-weight: 600;
 }
 
 .box-text a {
@@ -235,6 +259,7 @@ nav {
 .box img {
   margin-left: 2rem;
   margin-right: 2rem;
+  max-height: 15.25rem;
 }
 
 .customized-solutions {
@@ -252,7 +277,7 @@ nav {
 
 footer {
   background-color: #0A3C6D;
-  color: lightgrey;
+  color: white;
   width: 100%;
 }
 
